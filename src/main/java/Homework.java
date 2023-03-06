@@ -9,14 +9,12 @@ public class Homework {
 
     // Выбросить случайное целое число и сохранить в i
     public static int RandomNum (int min,int max) {
-        int nums = (int) (Math.random() * ((max - min) + 1)) + min;
-        return nums;
+        return (int) (Math.random() * ((max - min) + 1)) + min;
     }
 
     // Посчитать и сохранить в n номер старшего значащего бита выпавшего числа
     public static int SenBit(int i) {
-        int LenBin = Integer.toBinaryString(i).length();
-        return LenBin;
+        return Integer.toBinaryString(i).length();
     }
 
     // Найти все кратные n числа большие i и сохранить в массив m1
